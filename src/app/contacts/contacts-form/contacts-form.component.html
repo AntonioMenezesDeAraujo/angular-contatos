@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-toolbar>Contato</mat-toolbar>
+    <mat-card-content>
+        <form [formGroup]="form" class="full-width">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Nome" formControlName="name">
+            </mat-form-field>
+        
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Sobrenome" formControlName="lastName">
+            </mat-form-field>
+        
+            <mat-form-field class="full-width">
+                <input matInput placeholder="cpf" formControlName="cpf">
+            </mat-form-field>
+        
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Email" formControlName="email">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Nome" formControlName="name">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="onCancel()">Cancelar</button>
+        <button mat-raised-button color="primary" (click)="onSubmit()">Salvar</button>
+    </mat-card-actions>
+</mat-card>
